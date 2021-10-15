@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <table id="table">
+      <thead>
+      <tr class="trHead">
+        <th width='45px'></th>
+        <th>Name</th>
+        <th>Created</th>
+        <th>Category</th>
+        <th>Content</th>
+        <th>Dates</th>
+        <th>
+          <button id="changeList">
+            <img class="icon" src="images/icons/save-white.png">
+          </button>
+          <img class="icon" src="images/icons/trash-white.png">
+        </th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+    </table>
+    <div class="container-button"><button id="create-note">Create Note</button></div>
+  </div>
+
+  <div class="container">
+    <table id="table">
+      <thead>
+      <tr class="trHead">
+        <th width='45px'></th>
+        <th>Note Category</th>
+        <th>Active</th>
+        <th>Archived</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="sortNotes">
+    </tbody>
+    </table>
+  </div>
+
+  <div id="modal">
+  </div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
