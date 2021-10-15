@@ -10,7 +10,8 @@ class Modal {
     modalWraper.style = 'visibility: visible'
     containerModal.classList = 'container-modal'
     containerModal.innerHTML = `
-    <div id="container-modal">
+  <div id="container-modal">
+    <div id="box-modal">
       <div class='header-modal'>
         <h1>${data ? 'Change Note' : 'Create Note'}</h1> 
         <button id="close">X</button>
@@ -48,7 +49,8 @@ class Modal {
         }">
       </div>
       <button id="save" style="margin-top: 10px;">Save</button>
-    </div>`
+      </div>
+  </div>`
 
     modalWraper.appendChild(containerModal)
 
